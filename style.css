@@ -23,18 +23,25 @@ body,html{
     color: white;
 }
 header{
+    width: 100%;
     background-color: var(--lighting-color);
     text-align: center;
+    position: sticky;
+    top: 0;
+    transition: top 0.5s;
+    z-index: 100;
 }
 .container{
     max-width: 1300px;
-    padding: 1rem;
+    padding: 1rem 6rem;
     margin: 0 auto;
 }
 nav{
+    height: 6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 2px 5px 10px var(--darker-color);
 }
 nav ul{
     display: flex;
@@ -43,7 +50,7 @@ nav ul{
 nav ul a{
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     border-bottom: 0.2rem transparent solid;
     transition: 0.3s ease-in-out;
@@ -53,13 +60,13 @@ nav ul a:hover{
     transition: 0.3s ease-in-out;
 }
 h1{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 
 #hero{
     background-color: var(--dark-color);
-    padding: 4rem 0;
+    padding: 6rem 0;
     border-bottom: 4px solid var(--lighting-color);
 }
 #hero .container{
@@ -133,9 +140,6 @@ h1{
     flex-wrap: wrap;
     gap: 2rem;
 }
-.grid-item h3{
-    font-size: 1.5rem;
-}
 .card{
     border-radius: 0.5rem;
     overflow: hidden;
@@ -162,9 +166,13 @@ h1{
     margin-bottom: -6.5rem;
     transition: 0.5s ease-in-out;
     transform: translateY(100px);
-}
-.card-content h3{
     text-align: center;
+}
+.card-content a{
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 /* contact section */
